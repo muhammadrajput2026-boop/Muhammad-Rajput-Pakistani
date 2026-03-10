@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English Language Course - Muhammad Rajput</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* Light Blue Background */
+    }
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+    }
+    nav {
+      width: 200px;
+      background-color: #87cefa;
+      padding: 20px;
+      height: 100vh;
+    }
+    nav h3 {
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    .course-section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    form {
+      background: #e6f2ff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4682b4;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #315f7d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>English Language Course</h1>
+    <p>By Muhammad Rajput - Pakistan</p>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="intro" class="course-section">
+        <h2>Welcome</h2>
+        <p>This website offers free English language courses for everyone. Learn grammar, vocabulary, and speaking skills easily.</p>
+      </section>
+
+      <section id="lessons" class="course-section">
+        <h2>Course Lessons</h2>
+        <ul>
+          <li>Lesson 1: Basic Grammar</li>
+          <li>Lesson 2: Vocabulary Building</li>
+          <li>Lesson 3: Speaking Practice</li>
+          <li>Lesson 4: Writing Skills</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="course-section">
+        <h2>Send Me a Message</h2>
+        <form onsubmit="alert('Your message has been sent!'); return false;">
+          <label>Name:</label>
+          <input type="text" required>
+          <label>Email:</label>
+          <input type="email" required>
+          <label>Message:</label>
+          <textarea rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
