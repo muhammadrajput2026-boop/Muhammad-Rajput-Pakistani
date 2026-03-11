@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muhammad Rajput Pakistani - English Course</title>
+  <style>
+    :root{
+      --light-blue:#cfeffd;
+      --primary:#4aa3e0;
+      --dark:#0b3b5a;
+      --muted:#6b7b86;
+      --max-width:1100px;
+      --radius:8px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#f7fbff;color:var(--dark);line-height:1.5}
+    .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+    .site-header{background:linear-gradient(90deg,var(--light-blue),#e6f6ff);border-bottom:1px solid rgba(10,40,60,0.06)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+    .brand{margin:0;color:var(--dark);font-size:1.25rem}
+    .nav a{margin-left:1rem;color:var(--dark);text-decoration:none;font-weight:600}
+    .nav a.admin-link{background:var(--primary);color:#fff;padding:0.4rem 0.6rem;border-radius:6px;margin-left:1rem}
+    .hero{padding:3rem 0;background:linear-gradient(180deg,#f0fbff,white)}
+    .hero h2{margin:0 0 0.5rem;color:var(--dark)}
+    .hero p{margin:0 0 1rem;color:var(--muted)}
+    .btn{display:inline-block;background:var(--primary);color:#fff;padding:0.6rem 1rem;border-radius:6px;text-decoration:none}
+    .btn.small{padding:0.4rem 0.6rem;font-size:0.9rem}
+    .section{padding:2rem 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:#fff;border-radius:var(--radius);padding:1rem;box-shadow:0 6px 18px rgba(10,40,60,0.06)}
+    .card h4{margin:0 0 0.5rem}
+    .resource-list{display:flex;flex-direction:column;gap:0.6rem}
+    .resource-item{background:#fff;padding:0.6rem;border-radius:6px;display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(10,40,60,0.04)}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .contact-form{max-width:600px;background:#fff;padding:1rem;border-radius:8px;border:1px solid rgba(10,40,60,0.04)}
+    .contact-form label{display:block;margin-top:0.6rem;font-weight:600}
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(10,40,60,0.08);margin-top:0.3rem}
+    .note{color:var(--muted);margin-top:0.6rem}
+    .site-footer{padding:1rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(10,40,60,0.04);margin-top:2rem}
+    .admin-panel{max-width:900px;margin:2rem auto;background:#fff;padding:1rem;border-radius:8px;border:1px solid rgba(10,40,60,0.04)}
+    .hint{color:#666;font-size:0.95rem}
+    .status{margin-top:1rem;font-weight:600}
+    @media (max-width:600px){
+      .header-inner{flex-direction:column;align-items:flex-start}
+      .nav{margin-top:0.6rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Muhammad Rajput Pakistani</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+        <a href="#admin" class="admin-link">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Learn English with practical lessons</h2>
+        <p>Structured lectures, downloadable PDFs, and images for each lesson. Simple, clear, and desi-friendly.</p>
+        <a href="#courses" class="btn">View Courses</a>
+      </div>
+    </section>
+
+    <section id="courses" class="container section">
+      <h3>Courses</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Basic English</h4>
+          <p>Grammar, vocabulary, and simple conversations.</p>
+          <a href="#resources" class="btn small">Resources</a>
+        </article>
+        <article class="card">
+          <h4>Intermediate English</h4>
+          <p>Reading, writing, and listening practice.</p>
+          <a href="#resources" class="btn small">Resources</a>
+        </article>
+        <article class="card">
+          <h4>Advanced English</h4>
+          <p>Fluency, pronunciation, and advanced grammar.</p>
+          <a href="#resources" class="btn small">Resources</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="container section">
+      <h3>Lecture Resources</h3>
+      <p>Download lecture PDFs and images from the list below. To add files, upload them to the <code>/uploads</code> folder in the repository or use the Admin uploader below.</p>
+      <div id="resource-list" class="resource-list">
+        <!-- Static examples; جب آپ uploads میں فائلیں ڈالیں تو یہاں لنکس بدل دیں -->
+        <div class="resource-item">
+          <a href="uploads/lesson1.pdf" target="_blank">Lesson 1 PDF</a>
+          <span class="meta">PDF • example</span>
+        </div>
+        <div class="resource-item">
+          <a href="uploads/lesson2.jpg" target="_blank">Lesson 2 Image</a>
+          <span class="meta">Image • example</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact and Mail</h3>
+      <p>If you want to contact the instructor, use the form below. You will receive a copy if you enter your email.</p>
+
+      <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Your Email</label>
+        <input id="email" name="_replyto" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="hidden" name="_subject" value="New message from site visitor" />
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p class="note">اگر آپ براہِ راست ای میل بھیجنا چاہیں تو: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+
+    <section id="admin" class="container section">
+      <div class="admin-panel">
+        <h3>Admin Upload</h3>
+        <p class="hint">یہاں سے آپ lecture PDFs یا تصاویر ریپو کے <code>uploads/</code> فولڈر میں ڈال سکتے ہیں۔ نیچے GitHub API استعمال کیا گیا ہے — اسکرپٹ میں اپنے ٹوکن اور ریپو کی معلومات ڈالیں۔</p>
+
+        <label for="file">Choose file</label>
+        <input id="file" type="file" />
+
+        <label for="path">Save path inside repo</label>
+        <input id="path" type="text" placeholder="uploads/lesson3.pdf" />
+
+        <label for="commitMsg">Commit message</label>
+        <input id="commitMsg" type="text" placeholder="Add lesson3.pdf" />
+
+        <button id="uploadBtn" class="btn">Upload to GitHub</button>
+
+        <div id="status" class="status"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Muhammad Rajput Pakistani</p>
+    </div>
+  </footer>
+
+  <script>
+    // --- Basic UI ---
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form feedback
+    const form = document.getElementById('contact-form');
+    if(form){
+      form.addEventListener('submit', function(e){
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        setTimeout(()=> {
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+          alert('Message submitted. If you used Formspree, you will receive a confirmation.');
+        }, 1200);
+      });
+    }
+
+    // --- Admin uploader (GitHub) ---
+    // IMPORTANT: Replace placeholders below with your real values before using.
+    const GITHUB_TOKEN = 'REPLACE_WITH_YOUR_PERSONAL_ACCESS_TOKEN';
+    const GITHUB_OWNER = 'REPLACE_WITH_YOUR_GITHUB_USERNAME';
+    const GITHUB_REPO = 'REPLACE_WITH_YOUR_REPO_NAME';
+    const GITHUB_BRANCH = 'main';
+
+    const fileInput = document.getElementById('file');
+    const pathInput = document.getElementById('path');
+    const commitInput = document.getElementById('commitMsg');
+    const status = document.getElementById('status');
+    const uploadBtn = document.getElementById('uploadBtn');
+
+    function show(msg, isError){
+      status.textContent = msg;
+      status.style.color = isError ? 'crimson' : 'green';
+    }
+
+    async function uploadFile(){
+      const file = fileInput.files[0];
+      const path = pathInput.value.trim();
+      const commitMsg = commitInput.value.trim() || 'Add file via admin uploader';
+
+      if(!file || !path){
+        show('Select a file and set a path like uploads/lesson3.pdf', true);
+        return;
+      }
+      if(GITHUB_TOKEN.startsWith('REPLACE')){
+        show('Please set your GitHub token and repo details in the script.', true);
+        return;
+      }
+
+      show('Reading file...');
+      const reader = new FileReader();
+      reader.onload = async function(){
+        // Convert binary string to base64
+        const binary = reader.result;
+        let base64 = '';
+        try {
+          base64 = btoa(binary);
+        } catch(e){
+          // Fallback for large files: convert via Uint8Array
+          const bytes = new Uint8Array(binary.length);
+          for(let i=0;i<binary.length;i++) bytes[i] = binary.charCodeAt(i);
+          let chunk = '';
+          for(let i=0;i<bytes.length;i++){
+            chunk += String.fromCharCode(bytes[i]);
+          }
+          base64 = btoa(chunk);
+        }
+
+        show('Uploading to GitHub...');
+
+        const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodeURIComponent(path)}`;
+        try {
+          // Check if file exists to get sha
+          const getResp = await fetch(apiUrl + `?ref=${GITHUB_BRANCH}`, {
+            headers: { Authorization: 'token ' + GITHUB_TOKEN, Accept: 'application/vnd.github.v3+json' }
+          });
+          let sha = null;
+          if(getResp.ok){
+            const data = await getResp.json();
+            sha = data.sha;
+          }
+
+          const body = {
+            message: commitMsg,
+            content: base64,
+            branch: GITHUB_BRANCH
+          };
+          if(sha) body.sha = sha;
+
+          const putResp = await fetch(apiUrl, {
+            method: 'PUT',
+            headers: { Authorization: 'token ' + GITHUB_TOKEN, Accept: 'application/vnd.github.v3+json' },
+            body: JSON.stringify(body)
+          });
+
+          if(putResp.ok){
+            const res = await putResp.json();
+            show('Upload successful. File available at: ' + res.content.html_url);
+            // Optionally update resource list UI
+            addResourceLink(path);
+          } else {
+            const err = await putResp.json();
+            show('Upload failed: ' + (err.message || 'Unknown error'), true);
+          }
+        } catch(e){
+          show('Error: ' + e.message, true);
+        }
+      };
+      // Read as binary string for btoa; some browsers may restrict large files
+      reader.readAsBinaryString(file);
+    }
+
+    function addResourceLink(path){
+      const list = document.getElementById('resource-list');
+      const item = document.createElement('div');
+      item.className = 'resource-item';
+      const a = document.createElement('a');
+      a.href = path;
+      a.target = '_blank';
+      a.textContent = path.split('/').pop();
+      const meta = document.createElement('span');
+      meta.className = 'meta';
+      meta.textContent = 'Uploaded';
+      item.appendChild(a);
+      item.appendChild(meta);
+      list.prepend(item);
+    }
+
+    uploadBtn.addEventListener('click', uploadFile);
+  </script>
+</body>
+</html
